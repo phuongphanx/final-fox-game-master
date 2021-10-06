@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage" : "http://phuongphanx.github.io/final-fox-game-master/",
   "scripts": {
+    "deploy" : "gh-pages -d dist",
     "dev": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
