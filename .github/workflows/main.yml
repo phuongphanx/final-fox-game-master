@@ -15,7 +15,7 @@ jobs:
         working-directory: final-fox-game-master
         run: |
           npm install
-          npm run build -- https://github.com/phuongphanx/final-fox-game-master/
+          npm run build -- --public-url /final-fox-game-master/
       - name: Deploy site to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v1.4.0
         env:
