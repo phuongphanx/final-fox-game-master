@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: npm install and build
-        working-directory: /phuongphanx/final-fox-game-master
+        working-directory: final-fox-game-master
         run: |
           npm install
           npm run build -- --public-url /final-fox-game-master/
