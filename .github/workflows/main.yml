@@ -1,35 +1,24 @@
-name: website
 
-on: push
+name: Deploy Built Site to Pageshttps://github.com/phuongphanx/final-fox-game-master
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  publish:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v2
-      -
-        name: Gen dummy page
+      - uses: actions/checkout@main
+      - name: npm install and build
+        working-directory: final-fox-game-master
         run: |
-          mkdir public
-          cat > public/index.html <<EOL
-          <!doctype html>
-          <html>
-            <head>
-              <title>GitHub Pages deployed!</title>
-            </head>
-            <body>
-              <p>GitHub Pages with <strong>${{ github.sha }}</strong> commit ID has been deployed through <a href="https://github.com/marketplace/actions/github-pages">GitHub Pages action</a> successfully.</p>
-            </body>
-          </html>
-          EOL
-      -
-        name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: public
+          npm install
+          npm run build -- --public-url /final-fox-game-master/
+      - name: Deploy site to gh-pages branch
+        uses: crazy-max/ghaction-github-pages@v1.4.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PAT: ${{ secrets.PAT }}
+        with:
+          build_dir: final-fox-game-master/dist
