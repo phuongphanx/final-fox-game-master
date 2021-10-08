@@ -27,5 +27,5 @@ Display size: Coded for a fixed desktop browser size.
 
 --------------------------------------------
 Commisioned digital art by Alice Brereton;
-Project pair coded with Brian Holt
+Project pair-coded by Phuong Phan and Brian Holt
 
