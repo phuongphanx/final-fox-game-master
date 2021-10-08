@@ -26,6 +26,6 @@ Game Logic:
 Display size: Coded for a fixed desktop browser size.
 
 --------------------------------------------
-Commisioned digital art by Alice Brereton
+Commisioned digital art by Alice Brereton;
 Project pair coded with Brian Holt
 
