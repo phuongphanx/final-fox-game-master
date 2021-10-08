@@ -24,3 +24,8 @@ Game Logic:
 -The fox should not be able to die, get hungry, poop, be fed, have the poop cleaned up, or fall asleep when it is being fed, sleeping, hatching, or dead.
 
 Display size: Coded for a fixed desktop browser size.
+
+--------------------------------------------
+Commisioned digital art by Alice Brereton
+Project pair coded with Brian Holt
+--------------------------------------------
