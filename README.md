@@ -23,7 +23,7 @@ Game Logic:</br>
 -You cannot change the weather, clean up poop or feed a sleeping fox.</br>
 -The fox should not be able to die, get hungry, poop, be fed, have the poop cleaned up, or fall asleep when it is being fed, sleeping, hatching, or dead.</br>
 
-Display size: Coded for a fixed desktop browser size.
+(Display size: Coded for a fixed desktop browser size)
 
 --------------------------------------------
 Commissioned digital art by Alice Brereton</br>
