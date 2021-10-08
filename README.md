@@ -3,7 +3,7 @@
 The game starts in an initialized state. The user must press the center game to get started. Users can switch between the three icons on the bottom using the left and right button. To press one of the icons, they will click the middle button. Users cannot directly click the icons. If they reach the end of the icons and try to go further (click the right button when the right-most icon is selected) it should loop around.
 
 Game timeline:
--When the user starts, the fox will hatch after showing the hatch animation.
+-When the user starts, the fox will hatch after showing the hatch animation. </br>
 -Once the fox is hatched, show the fox in an idle animation in the day time.
 -The user can switch the weather from day to rain using the weather icon.
 -After some amount of time the fox will become hungry. This is on a variable schedule to add some unpredictability to the game.
