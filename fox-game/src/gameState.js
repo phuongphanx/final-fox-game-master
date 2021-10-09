@@ -146,14 +146,12 @@ const gameState = {
     this.determineFoxState();
   },
   cleanUpPoop() {
-    if (!this.current === "POOPING") {
-      return;
+    if (this.current === "POOPING") {
+      this.dieTime = -1;
+      togglePoopBag(true);
+      this.startCelebrating();
+      this.hungryTime = getNextHungerTime(this.clock);
     }
-
-    this.dieTime = -1;
-    togglePoopBag(true);
-    this.startCelebrating();
-    this.hungryTime = getNextHungerTime(this.clock);
   },
   
   feed() {
