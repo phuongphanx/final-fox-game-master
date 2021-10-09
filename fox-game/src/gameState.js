@@ -37,6 +37,8 @@ const gameState = {
       this.endCelebrating();
     } else if (this.clock === this.poopTime) {
       this.poop();
+    } else if (this.clock === this.dieTime) {
+      this.die();
     }
 
     return this.clock;
@@ -153,6 +155,7 @@ const gameState = {
     this.startCelebrating();
     this.hungryTime = getNextHungerTime(this.clock);
   },
+  
   feed() {
     if (this.current != "HUNGRY") {
       return;
