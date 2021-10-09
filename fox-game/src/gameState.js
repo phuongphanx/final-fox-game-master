@@ -53,6 +53,7 @@ const gameState = {
   wake() {
     this.current = "IDLING";
     this.wakeTime = -1; //because it's no longer waiting to wake up
+    modFox("idling");
     this.scene = Math.random() > RAIN_CHANCE ? 0 : 1;
     modScene(SCENES[this.scene]);
     this.sleepTime = this.clock + DAY_LENGTH;
